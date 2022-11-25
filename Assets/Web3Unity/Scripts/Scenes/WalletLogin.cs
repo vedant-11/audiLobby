@@ -9,8 +9,8 @@ public class WalletLogin: MonoBehaviour
     public Toggle rememberMe;
 
     void Start() {
-        // if remember me is checked, set the account to the saved account
-        if(PlayerPrefs.HasKey("RememberMe") && PlayerPrefs.HasKey("Account"))
+        //if remember me is checked, set the account to the saved account
+        if (PlayerPrefs.HasKey("RememberMe") && PlayerPrefs.HasKey("Account"))
         {
             if (PlayerPrefs.GetInt("RememberMe") == 1 && PlayerPrefs.GetString("Account") != "")
             {
@@ -18,6 +18,7 @@ public class WalletLogin: MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
+        //PlayerPrefs.DeleteAll();
     }
 
     async public void OnLogin()

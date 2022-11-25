@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
 
+    public float horizontalSpeed = 2.0F;
+    public float verticalSpeed = 2.0F;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
