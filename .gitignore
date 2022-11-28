@@ -61,6 +61,9 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+!Audi.app
+!Audi7.app
+
 # Crashlytics generated file
 crashlytics-build.properties
 
